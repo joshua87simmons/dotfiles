@@ -1,4 +1,5 @@
-source ~/.profile
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 HISTFILESIZE=5000
 
