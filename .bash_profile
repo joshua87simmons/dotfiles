@@ -11,7 +11,7 @@ export EDITOR='atom'
 
 alias cleartypo3='php Source/typo3/cli_dispatch.phpsh cleartypo3cache all'
 alias be="bundle exec"
-alias ls="ls -G"
+alias ls="pwd; ls -G"
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 ### Git completion
