@@ -2,13 +2,13 @@
 export ZSH=$HOME/.oh-my-zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-HISTFILESIZE=5000
+export PATH="/opt/boxen/homebrew/Cellar/vim:$PATH"
 
 export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/smlnj/bin
 export PATH="/opt/boxen/nodenv/versions/v0.10.17/lib/node_modules:$PATH"
 export PATH="/Users/jsimmons/node_modules:$PATH"
+export PATH="/Users/jsimmons/Library/Haskell/bin/ghc-modi:$PATH"
 export EDITOR='atom'
 
 
@@ -16,6 +16,7 @@ alias cleartypo3='php Source/typo3/cli_dispatch.phpsh cleartypo3cache all'
 alias be="bundle exec"
 alias ls="ls -G"
 
+HISTFILESIZE=5000
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # Set name of the theme to load.
@@ -66,7 +67,7 @@ plugins=(brew git osx sudo wd)
 
 # User configuration
 
-export PATH="/opt/boxen/phpenv/shims:/opt/boxen/phpenv/bin:/opt/boxen/phpenv/plugins/php-build/bin:bin:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/ruby-build/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/Users/jsimmons/node_modules:/opt/boxen/nodenv/versions/v0.10.17/lib/node_modules:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/jsimmons/.rvm/bin:/usr/local/smlnj/bin"
+export PATH="/opt/boxen/phpenv/shims:/opt/boxen/phpenv/bin:/opt/boxen/phpenv/plugins/php-build/bin:bin:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/ruby-build/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/Users/jsimmons/node_modules:/opt/boxen/nodenv/versions/v0.10.17/lib/node_modules:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/jsimmons/.rvm/bin:/usr/local/smlnj/bin:/Users/jsimmons/Library/Haskell/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
