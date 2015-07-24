@@ -9,7 +9,10 @@ export PATH=$PATH:/usr/local/smlnj/bin
 export PATH="/opt/boxen/nodenv/versions/v0.10.17/lib/node_modules:$PATH"
 export PATH="/Users/jsimmons/node_modules:$PATH"
 export PATH="/Users/jsimmons/Library/Haskell/bin/ghc-modi:$PATH"
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 export EDITOR='atom'
+
+export GOPATH=~/Playthings/Go/packages
 
 
 alias cleartypo3='php Source/typo3/cli_dispatch.phpsh cleartypo3cache all'
@@ -96,3 +99,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

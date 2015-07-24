@@ -3,6 +3,7 @@
 	lg = "log --pretty=format:'%C(yellow)%h%C(reset) %C(blue)%an%C(reset) %C(cyan)%cr%C(reset) %s %C(green)%d%C(reset)' --graph"
 	fuckit = !git reset --hard HEAD && git clean -df
 	redo = commit --amend -C HEAD
+        f = "!sh -c \"git log -g --grep=$1\" -"
 
 [hub]
 protocol = https
